@@ -1,0 +1,23 @@
+<Page title="{{title}}" topLevel="true" image="{{image}}">
+  <Composite id="details" background="white" highlightOnTouch="true">
+    <ImageView id="coverView" />
+    <TextView id="titleView" markupEnabled="true" />
+    <TextView id="authorView" />
+    <TextView id="priceView" />
+  </Composite>
+  <TextView id="separator"></TextView>
+  <TabFolder>
+    <Tab id="relatedTab" title="Related">
+      <CollectionView id="booksList" itemHeight="72">
+        <Cell>
+          <ImageView id="cellImage" scaleMode="fit" />
+          <TextView id="cellText" markupEnabled="true" textColor="#4a4a4a" />
+          <TextView id="cellDescriptionText" textColor="#7b7b7b" />
+        </Cell>
+      </CollectionView>
+    </Tab>
+    <Tab id="commentsTab" title="Comments">
+      <TextView id="commentsView" text="Great Book." />
+    </Tab>
+  </TabFolder>
+</Page>

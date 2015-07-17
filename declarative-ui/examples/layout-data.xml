@@ -1,0 +1,34 @@
+<Page topLevel="true">
+
+  <!-- Using separate elements – mixing widgets and layout data :( -->
+  <Composite id="details" background="white">
+    <LayoutData left="#coverView $PAGE_MARGIN" right="0" top="0" height="172"></LayoutData>
+    <TextView></TextView>
+  </Composite>
+
+  <!-- Using JSON in attributes – verbose, requires single quotes -->
+  <Composite id="details" background="white"
+      layoutData='{"left": ["#coverView", "$PAGE_MARGIN"], "right": 0, "top": 0, "height": 172}'>
+  </Composite>
+
+  <!-- Using simplified JSON in attributes – verbose, requires single quotes -->
+  <Composite id="details" background="white"
+      layoutData="{left: [#coverView, $PAGE_MARGIN], right: 0, top: 0, height: 172}">
+  </Composite>
+
+  <!-- Using CSS style syntax in attributes -->
+  <Composite id="details" background="white"
+      layoutData="left: #coverView $PAGE_MARGIN; right: 0; top: 0; height: 172">
+  </Composite>
+
+  <!-- Using separate attributes -->
+  <Composite id="details" background="white"
+      layoutData-left="#coverView $PAGE_MARGIN" layoutData-right="0" layoutData-top="0" layoutData-height="172">
+  </Composite>
+
+  <!-- Using separate attributes and a pre-defined namespace -->
+  <Composite id="details" background="white"
+      ld:left="#coverView $PAGE_MARGIN" ld:right="0" ld:top="0" ld:height="172">
+  </Composite>
+
+</Page>

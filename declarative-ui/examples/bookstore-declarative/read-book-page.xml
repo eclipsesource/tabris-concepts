@@ -1,0 +1,6 @@
+<Page topLevel="true">
+  <ScrollView id="scrollView" direction="vertical">
+    <TextView id="titleView" markupEnabled="true" textColor="rgba(0, 0, 0, 0.5)" />
+    <TextView id="textView" />
+  </ScrollView>
+</Page>

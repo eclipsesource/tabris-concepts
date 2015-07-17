@@ -1,0 +1,5 @@
+<Page topLevel="true">
+  <TextView id="#licenseView" />
+  <TextView id="#linkView" />
+  <TextView id="#authorsView" markupEnabled="true" />
+</Page>

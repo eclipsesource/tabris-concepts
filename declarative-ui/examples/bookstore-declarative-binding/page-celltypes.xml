@@ -1,0 +1,12 @@
+<Page title="{{title}}" topLevel="true" image="{{image}}">
+  <CollectionView itemHeight="72" items="{{data.books}}">
+    <Cell match="{{data.section}}" backgroundColor="#cecece" height="{{section.bold ? 23 : 42}}">
+      <TextView textColor="#7b7b7b" text="{{section.title}}" />
+    </Cell>
+    <Cell type="other">
+      <ImageView scaleMode="fit" image="{{book.image}}" />
+      <TextView markupEnabled="true" textColor="#4a4a4a" text="{{book.title}}" />
+      <TextView textColor="#7b7b7b" text="{{book.author}}" />
+    </Cell>
+  </CollectionView>
+</Page>

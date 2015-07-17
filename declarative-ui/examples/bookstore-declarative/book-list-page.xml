@@ -1,0 +1,9 @@
+<Page topLevel="true">
+  <CollectionView id="booksList" itemHeight="72">
+    <Cell>
+      <ImageView id="cellImage" scaleMode="fit" />
+      <TextView id="cellText" markupEnabled="true" textColor="#4a4a4a" />
+      <TextView id="cellDescriptionText" textColor="#7b7b7b" />
+    </Cell>
+  </CollectionView>
+</Page>

@@ -1,0 +1,23 @@
+<Page topLevel="true" title="{{title}}" image="{{image}}">
+  <Composite background="white" highlightOnTouch="true" onTap="createReadBookPage">
+    <ImageView image="{{book.image}}" />
+    <TextView text="<b>{{book.title}}</b>" markupEnabled="true" />
+    <TextView text="{{book.author}}" />
+    <TextView text="{{book.price}}" textColor="rgb(102, 153, 0)" />
+  </Composite>
+  <TextView background="rgba(0, 0, 0, 0.1)"></TextView>
+  <TabFolder>
+    <Tab title="Related">
+      <CollectionView itemHeight="72" items="{{books}}">
+        <Cell repeat="{{book in books}}">
+          <ImageView scaleMode="fit" image="{{book.image}}" />
+          <TextView markupEnabled="true" textColor="#4a4a4a" text="{{book.title}}"/>
+          <TextView textColor="#7b7b7b" text="{{book.author}}" />
+        <Cell>
+      </CollectionView>
+    </Tab>
+    <Tab title="Comments">
+      <TextView text="Great Book." />
+    </Tab>
+  </TabFolder>
+</Page>
